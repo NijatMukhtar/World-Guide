@@ -99,6 +99,7 @@ class RegisterController: UIViewController {
                 viewCont.navigationItem.hidesBackButton = true
                 Timer.scheduledTimer(withTimeInterval: TimeInterval(Int.random(in: 1..<3)), repeats: false) { _ in
                     ProgressHUD.dismiss()
+                    print("teze commit")
                     self.navigationController?.show(viewCont, sender: nil)
                 }
             }
