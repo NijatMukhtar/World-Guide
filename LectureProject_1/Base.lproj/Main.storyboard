@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -139,30 +140,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pga-Kh-Ucf">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Zgx-tu-D5y" id="Izn-mU-BfM"/>
                                     <outlet property="delegate" destination="Zgx-tu-D5y" id="cgs-Sl-blf"/>
                                 </connections>
                             </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0zY-5u-Wbr">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-EU-eX1">
+                                <rect key="frame" x="8" y="52" width="359" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="W26-zZ-a4a"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Table"/>
+                                    <segment title="Map"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentTapped:" destination="Zgx-tu-D5y" eventType="valueChanged" id="g5j-xy-bLx"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L7y-2w-HOA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="L7y-2w-HOA" firstAttribute="trailing" secondItem="pga-Kh-Ucf" secondAttribute="trailing" id="0Bf-Hh-NSK"/>
-                            <constraint firstItem="pga-Kh-Ucf" firstAttribute="leading" secondItem="L7y-2w-HOA" secondAttribute="leading" id="Dg5-wq-dGq"/>
+                            <constraint firstItem="pga-Kh-Ucf" firstAttribute="leading" secondItem="L7y-2w-HOA" secondAttribute="leading" id="05d-m6-ANk"/>
+                            <constraint firstItem="pga-Kh-Ucf" firstAttribute="trailing" secondItem="L7y-2w-HOA" secondAttribute="trailing" id="7O7-SF-l7e"/>
+                            <constraint firstItem="L7y-2w-HOA" firstAttribute="trailing" secondItem="lY5-EU-eX1" secondAttribute="trailing" constant="8" id="JZ8-su-8Hr"/>
                             <constraint firstItem="L7y-2w-HOA" firstAttribute="bottom" secondItem="pga-Kh-Ucf" secondAttribute="bottom" id="O8O-ad-qNe"/>
-                            <constraint firstItem="pga-Kh-Ucf" firstAttribute="top" secondItem="L7y-2w-HOA" secondAttribute="top" id="PZV-6u-FXV"/>
+                            <constraint firstItem="lY5-EU-eX1" firstAttribute="leading" secondItem="L7y-2w-HOA" secondAttribute="leading" constant="8" id="WmI-Vr-d0k"/>
+                            <constraint firstItem="lY5-EU-eX1" firstAttribute="centerX" secondItem="L7y-2w-HOA" secondAttribute="centerX" id="fMk-Sc-KkR"/>
+                            <constraint firstItem="0zY-5u-Wbr" firstAttribute="top" secondItem="lY5-EU-eX1" secondAttribute="bottom" constant="8" symbolic="YES" id="fWm-qr-RI9"/>
+                            <constraint firstItem="lY5-EU-eX1" firstAttribute="top" secondItem="L7y-2w-HOA" secondAttribute="top" constant="8" id="hgJ-Tw-X7H"/>
+                            <constraint firstItem="pga-Kh-Ucf" firstAttribute="top" secondItem="lY5-EU-eX1" secondAttribute="bottom" constant="8" symbolic="YES" id="m3b-kQ-Qk2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="map" destination="0zY-5u-Wbr" id="3dv-zM-4rd"/>
+                        <outlet property="segment" destination="lY5-EU-eX1" id="0Gu-KV-0yR"/>
                         <outlet property="table" destination="pga-Kh-Ucf" id="X13-Wo-jc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="az4-92-61u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2328" y="4"/>
+            <point key="canvasLocation" x="2327.1999999999998" y="3.6945812807881775"/>
         </scene>
         <!--City Controller-->
         <scene sceneID="gWS-Sn-ubf">

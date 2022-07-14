@@ -6,18 +6,45 @@
 //
 
 import UIKit
+import MapKit
 
-class PlaceController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PlaceController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var table: UITableView!
     
     var identifier = "PlaceCell"
     var places = [PlaceModel]()
     var loggedUser: Credentials?
-
+    let manager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        map.isHidden = true
         table.register(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(accountTapped))
+        
+        manager.delegate = self
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            manager.stopUpdatingLocation()
+            
+            let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude,
+                                                    longitude: location.coordinate.longitude)
+          
+            let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: CLLocationDistance(100), longitudinalMeters: CLLocationDistance(100))
+            map.setRegion(region, animated: true)
+            
+            let pin = MKPointAnnotation()
+            pin.coordinate = coordinate
+            map.addAnnotation(pin)
+        }
     }
     
     @IBAction func accountTapped(_ sender: Any) {
@@ -27,6 +54,18 @@ class PlaceController: UIViewController, UITableViewDataSource, UITableViewDeleg
         navigationController?.show(viewCont, sender: nil)
     }
     
+    @IBAction func segmentTapped(_ sender: Any) {
+        switch segment.selectedSegmentIndex{
+        case 0:
+            table.isHidden = false
+            map.isHidden = true
+        case 1:
+            table.isHidden = true
+            map.isHidden = false
+        default:
+            break;
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return places.count

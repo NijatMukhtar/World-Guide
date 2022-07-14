@@ -66,19 +66,21 @@ extension AccountController: UITableViewDelegate, UITableViewDataSource{
         }
         return cell
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("okay")
-//        if indexPath.row == 3 {
-//            if isPasswordHidden{
-//                cell.rightLabel.text = loggedUser?.password
-//                isPasswordHidden = false
-//            }
-//            else{
-//                cell.rightLabel.text = hiddenPassword
-//                isPasswordHidden = true
-//            }
-//        }
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("okay")
+        let cell = tableView.cellForRow(at: indexPath) as! AccountCell
+        if indexPath.row == 3 {
+            if isPasswordHidden{
+                cell.rightLabel.text = loggedUser?.password
+                isPasswordHidden = false
+            }
+            else{
+                cell.rightLabel.text = hiddenPassword
+                isPasswordHidden = true
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
