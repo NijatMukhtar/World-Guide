@@ -10,6 +10,7 @@ import UIKit
 class AccountController: UIViewController {
     
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var logoutButton: UIButton!
     
     var users = [Credentials]()
     var loggedUser: Credentials?
@@ -22,6 +23,11 @@ class AccountController: UIViewController {
         jsonSetup()
     }
     
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "LoginController") as! LoginController
+        controller.navigationItem.setHidesBackButton(true, animated: true)
+        navigationController?.show(controller, sender: nil)
+    }
     func jsonSetup() {
         if let jsonFile = Bundle.main.url(forResource: "Credentials", withExtension: "json"), let data = try? Data(contentsOf: jsonFile) {
             do {

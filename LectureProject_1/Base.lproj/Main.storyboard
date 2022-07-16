@@ -139,19 +139,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pga-Kh-Ucf">
-                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Zgx-tu-D5y" id="Izn-mU-BfM"/>
-                                    <outlet property="delegate" destination="Zgx-tu-D5y" id="cgs-Sl-blf"/>
-                                </connections>
-                            </tableView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="0zY-5u-Wbr">
-                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-EU-eX1">
                                 <rect key="frame" x="8" y="52" width="359" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -166,6 +153,19 @@
                                     <action selector="segmentTapped:" destination="Zgx-tu-D5y" eventType="valueChanged" id="g5j-xy-bLx"/>
                                 </connections>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pga-Kh-Ucf">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zgx-tu-D5y" id="Izn-mU-BfM"/>
+                                    <outlet property="delegate" destination="Zgx-tu-D5y" id="cgs-Sl-blf"/>
+                                </connections>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="0zY-5u-Wbr">
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L7y-2w-HOA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,8 +175,8 @@
                             <constraint firstItem="L7y-2w-HOA" firstAttribute="trailing" secondItem="lY5-EU-eX1" secondAttribute="trailing" constant="8" id="JZ8-su-8Hr"/>
                             <constraint firstItem="L7y-2w-HOA" firstAttribute="bottom" secondItem="pga-Kh-Ucf" secondAttribute="bottom" id="O8O-ad-qNe"/>
                             <constraint firstItem="lY5-EU-eX1" firstAttribute="leading" secondItem="L7y-2w-HOA" secondAttribute="leading" constant="8" id="WmI-Vr-d0k"/>
+                            <constraint firstItem="0zY-5u-Wbr" firstAttribute="top" secondItem="lY5-EU-eX1" secondAttribute="bottom" constant="8" symbolic="YES" id="XGX-cN-h5R"/>
                             <constraint firstItem="lY5-EU-eX1" firstAttribute="centerX" secondItem="L7y-2w-HOA" secondAttribute="centerX" id="fMk-Sc-KkR"/>
-                            <constraint firstItem="0zY-5u-Wbr" firstAttribute="top" secondItem="lY5-EU-eX1" secondAttribute="bottom" constant="8" symbolic="YES" id="fWm-qr-RI9"/>
                             <constraint firstItem="lY5-EU-eX1" firstAttribute="top" secondItem="L7y-2w-HOA" secondAttribute="top" constant="8" id="hgJ-Tw-X7H"/>
                             <constraint firstItem="pga-Kh-Ucf" firstAttribute="top" secondItem="lY5-EU-eX1" secondAttribute="bottom" constant="8" symbolic="YES" id="m3b-kQ-Qk2"/>
                         </constraints>
@@ -413,7 +413,7 @@
         <!--Navigation Controller-->
         <scene sceneID="2at-dz-a40">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OLm-p8-e2x" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginNav" automaticallyAdjustsScrollViewInsets="NO" id="OLm-p8-e2x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3f8-MK-PfE">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -580,30 +580,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QSv-cb-8db">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="682"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="0CY-rI-gZN" id="0ft-zW-rJP"/>
                                     <outlet property="delegate" destination="0CY-rI-gZN" id="S6s-a0-vDM"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-pq-ite">
+                                <rect key="frame" x="-5" y="734" width="385" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BbS-1I-89m"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log out"/>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="0CY-rI-gZN" eventType="touchUpInside" id="Egj-i2-xug"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VFv-Lp-ljR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VFv-Lp-ljR" firstAttribute="bottom" secondItem="QSv-cb-8db" secondAttribute="bottom" id="MJN-8z-oUp"/>
+                            <constraint firstItem="VFv-Lp-ljR" firstAttribute="trailing" secondItem="m8P-pq-ite" secondAttribute="trailing" constant="-5" id="eIB-79-OFk"/>
+                            <constraint firstItem="m8P-pq-ite" firstAttribute="top" secondItem="QSv-cb-8db" secondAttribute="bottom" constant="8" symbolic="YES" id="nC3-BW-XIB"/>
+                            <constraint firstItem="m8P-pq-ite" firstAttribute="bottom" secondItem="VFv-Lp-ljR" secondAttribute="bottom" id="ncc-vw-UFw"/>
                             <constraint firstItem="QSv-cb-8db" firstAttribute="top" secondItem="VFv-Lp-ljR" secondAttribute="top" id="nm1-3V-aM5"/>
                             <constraint firstItem="VFv-Lp-ljR" firstAttribute="trailing" secondItem="QSv-cb-8db" secondAttribute="trailing" id="sAB-cO-whe"/>
                             <constraint firstItem="QSv-cb-8db" firstAttribute="leading" secondItem="VFv-Lp-ljR" secondAttribute="leading" id="sHs-ge-7Ti"/>
+                            <constraint firstItem="m8P-pq-ite" firstAttribute="leading" secondItem="VFv-Lp-ljR" secondAttribute="leading" constant="-5" id="vXt-eW-4Pi"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="logoutButton" destination="m8P-pq-ite" id="FEf-nb-yf0"/>
                         <outlet property="table" destination="QSv-cb-8db" id="cQQ-t6-tia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahU-vU-eMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="-725"/>
+            <point key="canvasLocation" x="1544.8" y="-725.61576354679801"/>
         </scene>
     </scenes>
     <resources>

@@ -103,12 +103,13 @@ class LoginController: UIViewController, UITableViewDelegate {
     }
     
     func navigate(){
-        let viewCont = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
-        viewCont.loggedUser = loggedUser
-        navigationController?.show(viewCont, sender: nil)
+        let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
+        controller.loggedUser = loggedUser
+        controller.navigationItem.setHidesBackButton(true, animated: true)
+        navigationController?.show(controller, sender: nil)
     }
     
-    func textFieldSetup(){
+    func textFieldSetup() {
         emailView.layer.cornerRadius = 15
         passwordView.layer.cornerRadius = 15
         enterButton.layer.cornerRadius = 15
@@ -118,7 +119,7 @@ class LoginController: UIViewController, UITableViewDelegate {
         passwordView.layer.borderWidth = 1
     }
 
-    func getDocumentsDirectoryUrl() -> URL{
+    func getDocumentsDirectoryUrl() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
         return documentsDirectory
@@ -127,7 +128,7 @@ class LoginController: UIViewController, UITableViewDelegate {
     func jsonSetup() {
         let jsonFile = self.getDocumentsDirectoryUrl().appendingPathComponent("Credentials.json")
         
-        if let data = try? Data(contentsOf: jsonFile){
+        if let data = try? Data(contentsOf: jsonFile) {
             do {
                 model = try JSONDecoder().decode([Credentials].self, from: data)
             } catch{
@@ -136,7 +137,7 @@ class LoginController: UIViewController, UITableViewDelegate {
         }
         
     }
-    func CredentialCheck() -> Bool{
+    func credentialCheck() -> Bool{
         var i = 0
         while i < model.count {
             if(model[i].email == emailTextField.text && model[i].password == passwordTextField.text){
@@ -180,25 +181,20 @@ class LoginController: UIViewController, UITableViewDelegate {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
-
     
     @IBAction func buttonTapped(_ sender: Any) {
         if !isValidEmail(emailTextField.text!){
             unvalidEmailEntered()
-        }
-        if CredentialCheck() {
+        } else if credentialCheck() {
             ProgressHUD.show()
             let randomNumber = Double.random(in: 0..<2)
             Timer.scheduledTimer(withTimeInterval: randomNumber, repeats: false) { _ in
                 ProgressHUD.dismiss()
+                UserDefaults.standard.setValue(true, forKey: "isLoggedIn")
                 self.navigate()
             }
-        }
-        else {
+        } else {
             wrongCredentialsEntered()
         }
     }
-    
-
 }
-

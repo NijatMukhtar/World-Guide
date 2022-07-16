@@ -26,7 +26,7 @@ struct PlaceModel: Codable{
     let longitude: Double
 }
 
-struct Credentials: Codable{
+struct Credentials: Codable {
     let name: String
     let surname: String
     let email: String
