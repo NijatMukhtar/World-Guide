@@ -141,7 +141,7 @@ class LoginController: UIViewController, UITableViewDelegate {
         var i = 0
         while i < model.count {
             if(model[i].email == emailTextField.text && model[i].password == passwordTextField.text){
-                loggedUser = model[i]
+                UserDefaults.standard.setValue(model[i].email, forKey: "loggedUser")
                 return true
             }
             i += 1

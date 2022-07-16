@@ -21,7 +21,6 @@
 		359A52FC286B5D7700AD0538 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A52FA286B5D7700AD0538 /* PlaceCell.swift */; };
 		359A52FD286B5D7700AD0538 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 359A52FB286B5D7700AD0538 /* PlaceCell.xib */; };
 		359A52FF286B5E4200AD0538 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A52FE286B5E4200AD0538 /* PlaceController.swift */; };
-		35D27AE628737D57009BC983 /* Credentials.json in Resources */ = {isa = PBXBuildFile; fileRef = 35D27AE528737D57009BC983 /* Credentials.json */; };
 		47A5D8A72866DA4D00B6BD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A5D8A62866DA4D00B6BD4E /* AppDelegate.swift */; };
 		47A5D8A92866DA4D00B6BD4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A5D8A82866DA4D00B6BD4E /* SceneDelegate.swift */; };
 		47A5D8AE2866DA4D00B6BD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A5D8AC2866DA4D00B6BD4E /* Main.storyboard */; };
@@ -49,7 +48,6 @@
 		359A52FA286B5D7700AD0538 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		359A52FB286B5D7700AD0538 /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
 		359A52FE286B5E4200AD0538 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
-		35D27AE528737D57009BC983 /* Credentials.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Credentials.json; sourceTree = "<group>"; };
 		47A5D8A32866DA4D00B6BD4E /* LectureProject_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LectureProject_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A5D8A62866DA4D00B6BD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47A5D8A82866DA4D00B6BD4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				355B62AC287064740013BB31 /* Country.json */,
-				35D27AE528737D57009BC983 /* Credentials.json */,
 			);
 			path = "Json Files";
 			sourceTree = "<group>";
@@ -240,7 +237,6 @@
 				47A5D8AE2866DA4D00B6BD4E /* Main.storyboard in Resources */,
 				355B62AD287064740013BB31 /* Country.json in Resources */,
 				354F4C1F287D947F003269F4 /* AccountCell.xib in Resources */,
-				35D27AE628737D57009BC983 /* Credentials.json in Resources */,
 				3558432D286DFEC700D374E3 /* CountryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

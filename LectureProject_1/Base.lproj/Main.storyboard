@@ -139,20 +139,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-EU-eX1">
-                                <rect key="frame" x="8" y="52" width="359" height="32"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="W26-zZ-a4a"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Table"/>
-                                    <segment title="Map"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentTapped:" destination="Zgx-tu-D5y" eventType="valueChanged" id="g5j-xy-bLx"/>
-                                </connections>
-                            </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pga-Kh-Ucf">
                                 <rect key="frame" x="0.0" y="91" width="375" height="687"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -166,19 +152,32 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-EU-eX1">
+                                <rect key="frame" x="16" y="52" width="343" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="W26-zZ-a4a"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Table"/>
+                                    <segment title="Map"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentTapped:" destination="Zgx-tu-D5y" eventType="valueChanged" id="g5j-xy-bLx"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L7y-2w-HOA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pga-Kh-Ucf" firstAttribute="leading" secondItem="L7y-2w-HOA" secondAttribute="leading" id="05d-m6-ANk"/>
                             <constraint firstItem="pga-Kh-Ucf" firstAttribute="trailing" secondItem="L7y-2w-HOA" secondAttribute="trailing" id="7O7-SF-l7e"/>
-                            <constraint firstItem="L7y-2w-HOA" firstAttribute="trailing" secondItem="lY5-EU-eX1" secondAttribute="trailing" constant="8" id="JZ8-su-8Hr"/>
                             <constraint firstItem="L7y-2w-HOA" firstAttribute="bottom" secondItem="pga-Kh-Ucf" secondAttribute="bottom" id="O8O-ad-qNe"/>
-                            <constraint firstItem="lY5-EU-eX1" firstAttribute="leading" secondItem="L7y-2w-HOA" secondAttribute="leading" constant="8" id="WmI-Vr-d0k"/>
                             <constraint firstItem="0zY-5u-Wbr" firstAttribute="top" secondItem="lY5-EU-eX1" secondAttribute="bottom" constant="8" symbolic="YES" id="XGX-cN-h5R"/>
                             <constraint firstItem="lY5-EU-eX1" firstAttribute="centerX" secondItem="L7y-2w-HOA" secondAttribute="centerX" id="fMk-Sc-KkR"/>
                             <constraint firstItem="lY5-EU-eX1" firstAttribute="top" secondItem="L7y-2w-HOA" secondAttribute="top" constant="8" id="hgJ-Tw-X7H"/>
                             <constraint firstItem="pga-Kh-Ucf" firstAttribute="top" secondItem="lY5-EU-eX1" secondAttribute="bottom" constant="8" symbolic="YES" id="m3b-kQ-Qk2"/>
+                            <constraint firstItem="lY5-EU-eX1" firstAttribute="width" secondItem="rbm-FS-bfS" secondAttribute="width" multiplier="0.914667" id="nPO-5s-wha"/>
                         </constraints>
                     </view>
                     <connections>

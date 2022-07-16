@@ -47,6 +47,7 @@ class PlaceController: UIViewController, UITableViewDataSource, UITableViewDeleg
         for place in places {
             let pin = MKPointAnnotation()
             pin.coordinate = CLLocationCoordinate2D(latitude: place.latitude, longitude: place.longitude)
+            pin.title = place.name
             pins.append(pin)
             print(place.longitude)
         }
