@@ -33,22 +33,25 @@ class PlaceController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("test1")
-        if let location = locations.first {
-            manager.stopUpdatingLocation()
-            print("test2")
-            let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude,
-                longitude: location.coordinate.longitude)
-            let span = MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100)
-//            let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: CLLocationDistance(100), longitudinalMeters: CLLocationDistance(100))
-            let region = MKCoordinateRegion(center: coordinate, span: span)
-                                        map.setRegion(region, animated: true)
-            map.setRegion(region, animated: true)
-            
+        
+        
+        manager.stopUpdatingLocation()
+        
+        //            let span = MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100)
+        //
+        //            let region = MKCoordinateRegion(center: coordinate, span: span)
+        //                                        map.setRegion(region, animated: true)
+        //            map.setRegion(region, animated: true)
+        
+        var pins = [MKAnnotation]()
+        for place in places {
             let pin = MKPointAnnotation()
-            pin.coordinate = coordinate
-            map.addAnnotation(pin)
+            pin.coordinate = CLLocationCoordinate2D(latitude: place.latitude, longitude: place.longitude)
+            pins.append(pin)
+            print(place.longitude)
         }
+        map.showAnnotations(pins, animated: true)
+//        map.addAnnotations(pins)
     }
     
     @IBAction func accountTapped(_ sender: Any) {

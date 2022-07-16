@@ -22,6 +22,8 @@ struct PlaceModel: Codable{
     let image: [String]
     let text: String
     let name: String
+    let latitude: Double
+    let longitude: Double
 }
 
 struct Credentials: Codable{

@@ -1,512 +1,90 @@
 [
- {
-     "name": "Azerbaijan",
-     "flag": "aze",
-     "cities": [
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
+    {
+        "name": "Azerbaijan",
+        "flag": "aze",
+        "cities": [
+            {
+                "name": "Baku",
+                "image": "baku",
+                "places": [
+                    {
+                        "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
+                        "name": "Tarqovu",
+                        "latitude": 40.371165,
+                        "longitude": 49.835735
+                    },
+                    {
+                        "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
+                        "name": "Boulevard",
+                        "latitude": 40.370575,
+                        "longitude": 49.848425
+                    },
+                    {
+                        "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
+                        "name": "Martyrs' Lane",
+                        "latitude": 40.356790,
+                        "longitude": 49.828068
+                    }
+                ]
+            },
+            {
+                "name": "Ganja",
+                "image": "ganja",
+                "places": [
+                    {
+                        "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
+                        "name": "Juma Mosque",
+                        "latitude": 40.677517,
+                        "longitude": 46.359048
+                    },
+                    {
+                        "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
+                        "name": "Khan's Garden",
+                        "latitude": 40.675992,
+                        "longitude": 46.355574
+                    },
+                    {
+                        "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
+                        "name": "Nizami Mausoleum",
+                        "latitude": 40.685711,
+                        "longitude": 46.432076
+
+                    }
+                ]
+            },
+            {
+                "name": "Shusha",
+                "image": "susa",
+                "places": [
+                    {
+                        "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
+                        "name": "Ghazanchetsots Cathedral",
+                        "latitude": 39.758580,
+                        "longitude": 46.747415
+                    },
+                    {
+                        "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
+                        "name": "Yukhari Govhar Agha Mosque",
+                        "latitude": 39.761716,
+                        "longitude": 46.753686
+                    },
+                    {
+                        "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
+                        "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
+                        "name": "Kanach Zham Church",
+                        "latitude": 39.762540,
+                        "longitude": 46.743519
+                    }
+                ]
+            }
         ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      },
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
-        ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      },
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
-        ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      },
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
-        ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      },
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
-        ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      },
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
-        ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      },
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
-        ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      },
-      {
-          "name": "Baku",
-          "image": "baku",
-          "places": [
-                {
-                    "image": ["tarqovu", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The street's history could be traced back to Baku's town-planning project of 1864. The street runs through the city's downtown from west to east. It begins from Abdulla Shaig Street, in the mountainous part of the city and ends at railroad bed on Sabit Orujov Street, near a monument to Shah Ismail Khatai in “Black City”. The total length of the street is 3,538 m.The traffic-free segment, which begins at the Fountains Square and ends at the Rashid Behbudov Street, is commonly known as Torgovaya.",
-                    "name": "Tarqovu"
-                },
-                {
-                    "image": ["bulvar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Baku Boulevard (Azerbaijani: Dənizkənarı Milli Park, also known as National Park) is a promenade established in 1909[1] which runs parallel to Baku's seafront. Its history goes back more than 100 years, to a time when Baku oil barons built their mansions along the Caspian shore and when the seafront was artificially built up inch by inch.",
-                    "name": "Boulevard"
-                },
-                {
-                    "image": ["sehidlerXiyabani", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "In the closing days of World War I, fighting broke out in Baku as a result of the Russian Civil War, with four groups fighting for control of the area when the Russian Empire collapsed. Fighting each other were the Bolsheviks, Mensheviks, Armenians and Azeris. Many people were killed in the fighting including some from a small British force sent to prevent Baku falling into the hands of the Russians. The Martyrs' Lane site first served as Muslim cemetery for victims of the March Events of 1918.",
-                    "name": "Martyrs' Lane"
-                }
-          ]
-      },
-      {
-        "name": "Ganja",
-        "image": "ganja",
-        "places": [
-                {
-                    "image": ["jumamosque", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Juma Mosque of Ganja (Azerbaijani: Cümə məscidi) or Friday Mosque of Ganja is a mosque located in the centre of Ganja, Azerbaijan. The mosque was built in 1606, according to a project of Sheykh Baheddin Mohammad Amili. The mosque is also often called “Shah Abbas Mosque” (Azerbaijani: Şah Abbas Məscidi) because it was built on the instructions of Shah Abbas the Great during his reign.\n  In 1776, two minarets were attached to the mosque. The mosque was built of red brick, which was traditional for Ganja. There was functioned a madrasah at the mosque for a long time, where the eminent Azerbaijani poet and scientist Mirza Shafi Vazeh taught at that time.",
-                    "name": "Juma Mosque"
-                },
-                {
-                    "image": ["khansgarden", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Javad Khan, a member of the Qajar dynasty, and the last khan of the Ganja khanate from 1786 to 1804, was a naturalist. The name of the garden is related to his name. He had a 52 hectare garden. He would order rare trees from merchants traveling to the city. Foreign guests would also bring him different trees and flowers. Part of the garden went to Ganja Fortress that Turkish warlord Serdar Ferhad Pasha erected in 1588. Actually it was assumed that the garden was also made by Serdar Ferhad Pasha in 1582. The battle of Javad Khan's squad for Russians was also there. Therefore, Mikhail Semyonovich Vorontsov decided to eradicate the garden from the earth along with the Ganja Fortress.",
-                    "name": "Khan's Garden"
-                },
-                {
-                    "image": ["nizamiganjavi", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The tomb of Nizami has been a place of devoted pilgrimage for many centuries. According to historian Vasily Bartold, the mausoleum was first mentioned in historical chronicles in 1606. The Safavid court chronicler Iskander Beg Munshi reported that toward the end of February 1606, Shah Abbas I reached Ganja and camped near the tomb of Sheikh Nizami, where on 24 March he celebrated the holiday of Novruz. During the Russo-Persian War in 1826 a decisive battle between Russian and Persian forces took place near the tomb of Nizami. The Russian forces under the command of General Ivan Paskevich defeated the Persian army and forced it to retreat. Russian envoy to Persia Aleksandr Griboyedov mentioned in his diary a conversation with writer and historian Abbasgulu Bakikhanov, a member of the Russian diplomatic mission at the time, in which the latter told him that Elisabethpol battle was near the Nizami tomb.",
-                    "name": "Nizami Mausoleum"
-                }
-        ]
-    },
-      {
-          "name": "Shusha",
-          "image": "susa",
-          "places": [
-                {
-                    "image": ["cathedral", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Holy Savior Cathedral (Armenian: Սուրբ Ամենափրկիչ մայր տաճար, Surb Amenap′rkich mayr tachar), commonly referred to as Ghazanchetsots (Armenian: Ղազանչեցոց), is an Armenian Apostolic cathedral in Shusha (also known as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh. It is the cathedra of the Diocese of Artsakh of the Armenian Apostolic Church. Standing 35 metres (115 ft) high, Ghazanchetsots is one of the largest Armenian churches in the world. A landmark of Shusha and the Karabakh region, and of Armenian cultural and religious identity,it is listed as cultural and historical monument of the breakaway Republic of Artsakh",
-                    "name": "Ghazanchetsots Cathedral"
-                },
-                {
-                    "image": ["yukharigovhar", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "The Yukhari Govhar Agha means The Upper Govhar Agha Mosque in Azerbaijani, referring to the location of the mosque in the upper section of Shusha town and to distinguish it from the Ashaghi Govhar Agha Mosque, the same-name mosque located in the lower section of the town. Both mosques are considered symbols of Shusha and masterpieces of Eastern architecture.The Yukhari Govhar Agha Mosque is located on Shusha's main square, Yusif Vazir Chamanzaminli street and makes up a big part of the architectural complex including madrasa, shops, and houses built by the same architect. According to historian and author of Karabakh-name, Mirza Jamal Karabakhi, construction of the mosque was started with orders of Ibrahim Khalil Khan in 1768 (1182 according to the Islamic calendar) but was stopped for a long time.",
-                    "name": "Yukhari Govhar Agha Mosque"
-                },
-                {
-                    "image": ["kanach", "tarqovu1", "tarqovu2","tarqovu3"],
-                    "text": "Saint John the Baptist Church (Armenian: Սուրբ հովհաննես Մկրտիչ Եկեղեցի), commonly known as Kanach Zham (Armenian: Կանաչ Ժամ) is an Armenian Apostolic church in Shusha (known to Armenians as Shushi) in Azerbaijan, in the disputed region of Nagorno-Karabakh, located just uphill from the Ghazanchetsots Cathedral. Kanach Zham means Green Chapel in Armenian, which refers to the previously green domes of the church. The church is sometimes also called Gharabakhtsots, the name of the old wooden church that was previously located in the same place as Kanach Zham, and which was named as such in honor of the farmers of Nagorno-Karabakh who built it.",
-                    "name": "Kanach Zham Church"
-                }
-          ]
-      }
-     ]
- }
+    }
 ]

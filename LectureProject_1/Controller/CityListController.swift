@@ -64,6 +64,7 @@ extension CityListController: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: collectionView.frame.width / CGFloat(itemNumberInOneRow), height: collectionView.frame.width / CGFloat(itemNumberInOneRow))
     }
     
+    
  
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
