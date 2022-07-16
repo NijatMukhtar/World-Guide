@@ -17,15 +17,7 @@ class CityListController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(accountTapped))
         //changeImageSize()
-    }
-    
-    @IBAction func accountTapped(_ sender: Any) {
-    let viewCont = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
-    viewCont.title = "Profile"
-    viewCont.loggedUser = loggedUser
-    navigationController?.show(viewCont, sender: nil)
     }
 
 }

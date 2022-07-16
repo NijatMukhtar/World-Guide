@@ -23,7 +23,6 @@ class PlaceController: UIViewController, UITableViewDataSource, UITableViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         table.register(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(accountTapped))
         
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
@@ -55,12 +54,7 @@ class PlaceController: UIViewController, UITableViewDataSource, UITableViewDeleg
 //        map.addAnnotations(pins)
     }
     
-    @IBAction func accountTapped(_ sender: Any) {
-        let viewCont = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
-        viewCont.title = "Profile"
-        viewCont.loggedUser = loggedUser
-        navigationController?.show(viewCont, sender: nil)
-    }
+
     
     @IBAction func segmentTapped(_ sender: Any) {
         switch segment.selectedSegmentIndex{

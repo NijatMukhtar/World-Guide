@@ -17,16 +17,10 @@ class CityController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = place?.text
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(accountTapped))
+
 
     }
     
-    @IBAction func accountTapped(_ sender: Any) {
-        let viewCont = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
-        viewCont.title = "Profile"
-        viewCont.loggedUser = loggedUser
-        navigationController?.show(viewCont, sender: nil)
-    }
     
 } 
 
