@@ -188,7 +188,7 @@ class LoginController: UIViewController, UITableViewDelegate {
         }
         if CredentialCheck() {
             ProgressHUD.show()
-            let randomNumber = Double.random(in: 0..<5)
+            let randomNumber = Double.random(in: 0..<2)
             Timer.scheduledTimer(withTimeInterval: randomNumber, repeats: false) { _ in
                 ProgressHUD.dismiss()
                 self.navigate()

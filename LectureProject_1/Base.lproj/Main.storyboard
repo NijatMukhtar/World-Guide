@@ -147,7 +147,7 @@
                                     <outlet property="delegate" destination="Zgx-tu-D5y" id="cgs-Sl-blf"/>
                                 </connections>
                             </tableView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0zY-5u-Wbr">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="0zY-5u-Wbr">
                                 <rect key="frame" x="0.0" y="91" width="375" height="687"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>

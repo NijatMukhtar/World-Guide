@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class PlaceController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     
@@ -21,7 +22,6 @@ class PlaceController: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        map.isHidden = true
         table.register(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(accountTapped))
         
@@ -29,16 +29,20 @@ class PlaceController: UIViewController, UITableViewDataSource, UITableViewDeleg
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
 
+        map.isHidden = true
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("test1")
         if let location = locations.first {
             manager.stopUpdatingLocation()
-            
+            print("test2")
             let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude,
-                                                    longitude: location.coordinate.longitude)
-          
-            let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: CLLocationDistance(100), longitudinalMeters: CLLocationDistance(100))
+                longitude: location.coordinate.longitude)
+            let span = MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100)
+//            let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: CLLocationDistance(100), longitudinalMeters: CLLocationDistance(100))
+            let region = MKCoordinateRegion(center: coordinate, span: span)
+                                        map.setRegion(region, animated: true)
             map.setRegion(region, animated: true)
             
             let pin = MKPointAnnotation()
