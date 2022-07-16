@@ -11,6 +11,7 @@ class AccountController: UIViewController {
     
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var editButton: UIButton!
     
     var users = [Credentials]()
     var loggedUser: Credentials?
@@ -20,7 +21,10 @@ class AccountController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         table.register(UINib(nibName: "AccountCell", bundle: nil), forCellReuseIdentifier: "AccountCell")
-        jsonSetup()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        table.reloadData()
     }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
@@ -28,8 +32,23 @@ class AccountController: UIViewController {
         controller.navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.show(controller, sender: nil)
     }
+    
+    @IBAction func editButtonTapped(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "EditSectionController") as! EditSectionController
+        controller.title = "Edit Page"
+        controller.loggedUser = loggedUser
+        navigationController?.show(controller, sender: nil)
+    }
+    func getDocumentsDirectoryUrl() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
     func jsonSetup() {
-        if let jsonFile = Bundle.main.url(forResource: "Credentials", withExtension: "json"), let data = try? Data(contentsOf: jsonFile) {
+        let jsonFile = self.getDocumentsDirectoryUrl().appendingPathComponent("Credentials.json")
+        
+        if let data = try? Data(contentsOf: jsonFile) {
             do {
                 users = try JSONDecoder().decode([Credentials].self, from: data)
             } catch{
@@ -38,40 +57,42 @@ class AccountController: UIViewController {
         }
         
     }
+    
 }
 
 extension AccountController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         4
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = table.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath) as! AccountCell
-        cell.isUserInteractionEnabled = false
-        switch indexPath.row{
-        case 0:
-            cell.leftLabel.text = "Name: "
-            cell.rightLabel.text = loggedUser?.name
-        case 1:
-            cell.leftLabel.text = "Surname: "
-            cell.rightLabel.text = loggedUser?.surname
-        case 2:
-            cell.leftLabel.text = "Email: "
-            cell.rightLabel.text = loggedUser?.email
-        case 3:
-            cell.leftLabel.text = "Password: "
-            var i = 0
-            while i < loggedUser?.password.count ?? 8{
-                hiddenPassword += "*"
-                i += 1
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = table.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath) as! AccountCell
+            cell.isUserInteractionEnabled = false
+            switch indexPath.row{
+            case 0:
+                cell.leftLabel.text = "Name: "
+                cell.rightLabel.text = loggedUser?.name
+            case 1:
+                cell.leftLabel.text = "Surname: "
+                cell.rightLabel.text = loggedUser?.surname
+            case 2:
+                cell.leftLabel.text = "Email: "
+                cell.rightLabel.text = loggedUser?.email
+            case 3:
+                cell.leftLabel.text = "Password: "
+                var i = 0
+                while i < loggedUser?.password.count ?? 8{
+                    hiddenPassword += "*"
+                    i += 1
+                }
+                cell.rightLabel.text = hiddenPassword
+                cell.isUserInteractionEnabled = true
+            default:
+                break
             }
-            cell.rightLabel.text = hiddenPassword
-            cell.isUserInteractionEnabled = true
-        default:
-            break
+            return cell
         }
-        return cell
-    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("okay")
         let cell = tableView.cellForRow(at: indexPath) as! AccountCell

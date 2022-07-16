@@ -38,10 +38,10 @@ class CountryListController: UIViewController {
         }
     }
     @IBAction func accountTapped(_ sender: Any) {
-        let viewCont = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
-        viewCont.title = "Profile"
-        viewCont.loggedUser = loggedUser
-        navigationController?.show(viewCont, sender: nil)
+        let controller = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
+        controller.title = "Profile"
+        controller.loggedUser = loggedUser
+        navigationController?.show(controller, sender: nil)
     }
     func jsonSetup() {
         if let jsonFile = Bundle.main.url(forResource: "Country", withExtension: "json"), let data = try? Data(contentsOf: jsonFile) {
