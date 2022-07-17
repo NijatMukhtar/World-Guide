@@ -13,7 +13,6 @@ class AccountController: UIViewController {
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
     
-    var users = [Credentials]()
     var loggedUser: Credentials?
     var hiddenPassword = ""
     var isPasswordHidden = true
@@ -44,20 +43,7 @@ class AccountController: UIViewController {
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
-    
-    func jsonSetup() {
-        let jsonFile = self.getDocumentsDirectoryUrl().appendingPathComponent("Credentials.json")
-        
-        if let data = try? Data(contentsOf: jsonFile) {
-            do {
-                users = try JSONDecoder().decode([Credentials].self, from: data)
-            } catch{
-                print(error.localizedDescription)
-            }
-        }
-        
-    }
-    
+
 }
 
 extension AccountController: UITableViewDelegate, UITableViewDataSource{

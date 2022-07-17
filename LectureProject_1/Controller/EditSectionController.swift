@@ -61,13 +61,15 @@ class EditSectionController: UIViewController {
             passwordTextField.text = loggedUser?.password
         }
         if(passwordTextField.text!.count < 8) {
-                let dialogMessage = UIAlertController(title: "Error", message: "Your password should contain at least 8 characters, please try again!", preferredStyle: .alert)
-                let ok = UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
-                    print("Ok button tapped")
-                 })
-                dialogMessage.addAction(ok)
-                self.present(dialogMessage, animated: true, completion: nil)
-                passwordTextField.text = ""
+            let dialogMessage = UIAlertController(title: "Error", message: "Your password should contain at least 8 characters, please try again!", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
+                print("Ok button tapped")
+            })
+            dialogMessage.addAction(ok)
+            self.present(dialogMessage, animated: true, completion: nil)
+            passwordTextField.text = ""
+            nameTextfield.text = ""
+            surnameTextfield.text = ""
         }
     }
     
