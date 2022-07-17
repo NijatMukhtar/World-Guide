@@ -50,7 +50,7 @@ class EditSectionController: UIViewController {
         
     }
     
-    func editCheck(){
+    func editCheck() -> Bool {
         if(nameTextfield.text?.count == 0) {
             nameTextfield.text = loggedUser?.name
         }
@@ -70,7 +70,9 @@ class EditSectionController: UIViewController {
             passwordTextField.text = ""
             nameTextfield.text = ""
             surnameTextfield.text = ""
+            return false
         }
+        return true
     }
     
     func writeToJson(newModel: [Credentials]) {
@@ -87,21 +89,22 @@ class EditSectionController: UIViewController {
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
-        editCheck()
-        let tempUser: Credentials = Credentials(name: nameTextfield.text!, surname: surnameTextfield.text!, email: emailTextfield.text!, password: passwordTextField.text!)
-        controller.loggedUser = tempUser
-        
-        var i = 0
-        while i < allUsers.count{
-            if(allUsers[i].email == tempUser.email) {
-                print(allUsers[i].email)
-                allUsers.remove(at: i)
-                allUsers.append(tempUser)
-                writeToJson(newModel: allUsers)
+        if editCheck() {
+            let tempUser: Credentials = Credentials(name: nameTextfield.text!, surname: surnameTextfield.text!, email: emailTextfield.text!, password: passwordTextField.text!)
+            controller.loggedUser = tempUser
+            
+            var i = 0
+            while i < allUsers.count{
+                if(allUsers[i].email == tempUser.email) {
+                    print(allUsers[i].email)
+                    allUsers.remove(at: i)
+                    allUsers.append(tempUser)
+                    writeToJson(newModel: allUsers)
+                }
+                i += 1
+            }
+            
+            navigationController?.popViewController(animated: true)
         }
-            i += 1
-        }
-        
-        navigationController?.popViewController(animated: true)
     }
     }
