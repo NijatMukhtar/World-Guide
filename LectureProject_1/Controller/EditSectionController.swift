@@ -65,6 +65,7 @@ class EditSectionController: UIViewController {
             let ok = UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
                 print("Ok button tapped")
             })
+            
             dialogMessage.addAction(ok)
             self.present(dialogMessage, animated: true, completion: nil)
             passwordTextField.text = ""
