@@ -43,7 +43,6 @@ class LoginController: UIViewController, UITableViewDelegate {
         textFieldSetup()
     }
     
-    
     func tapForHidingKeyboard(){
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -51,11 +50,13 @@ class LoginController: UIViewController, UITableViewDelegate {
     
     func basicCornerAnimation(){
         let animation = CABasicAnimation(keyPath: "cornerRadius")
+        
         animation.fromValue = 0
         animation.toValue = 32
         animation.duration = 1.5
         animation.autoreverses = true
         animation.repeatCount = .infinity
+        
         greenBackgroundView.layer.add(animation, forKey: nil)
     }
 
@@ -63,11 +64,11 @@ class LoginController: UIViewController, UITableViewDelegate {
         UIView.animate(withDuration: 1.5, delay: 0, options: [.autoreverse, .repeat]) {
             self.flagView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         }
-        
     }
     
     func basicRotateAnimation(){
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+        
         animation.fromValue = 0
         animation.toValue = CGFloat.pi * 2
         animation.duration = 1
@@ -104,8 +105,10 @@ class LoginController: UIViewController, UITableViewDelegate {
     
     func navigate(){
         let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
+        
         controller.loggedUser = loggedUser
         controller.navigationItem.setHidesBackButton(true, animated: true)
+        
         navigationController?.show(controller, sender: nil)
     }
     
