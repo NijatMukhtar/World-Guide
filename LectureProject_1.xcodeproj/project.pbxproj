@@ -93,8 +93,8 @@
 				47A5D8BE2866F17000B6BD4E /* CityController.swift */,
 				355B62AE287070600013BB31 /* LoginController.swift */,
 				3599F2FC287490FC00B300FE /* RegisterController.swift */,
-				354F4C20287D9575003269F4 /* AccountController.swift */,
 				352760672883635800D36174 /* EditSectionController.swift */,
+				354F4C20287D9575003269F4 /* AccountController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

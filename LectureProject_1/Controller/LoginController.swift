@@ -105,8 +105,6 @@ class LoginController: UIViewController, UITableViewDelegate {
     
     func navigate(){
         let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
-        
-        controller.loggedUser = loggedUser
         controller.navigationItem.setHidesBackButton(true, animated: true)
         
         navigationController?.show(controller, sender: nil)

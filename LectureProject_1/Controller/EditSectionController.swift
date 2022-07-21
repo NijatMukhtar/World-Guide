@@ -16,13 +16,13 @@ class EditSectionController: UIViewController {
     
     var loggedUser: Credentials?
     var allUsers = [Credentials]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTexfields()
         jsonSetup()
     }
-
+    
     func getDocumentsDirectoryUrl() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
@@ -89,10 +89,8 @@ class EditSectionController: UIViewController {
     }
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
         if editCheck() {
-            let tempUser: Credentials = Credentials(name: nameTextfield.text!, surname: surnameTextfield.text!, email: emailTextfield.text!, password: passwordTextField.text!)
-            controller.loggedUser = tempUser
+            let tempUser = Credentials(name: nameTextfield.text!, surname: surnameTextfield.text!, email: emailTextfield.text!, password: passwordTextField.text!)
             
             var i = 0
             while i < allUsers.count{
@@ -104,8 +102,7 @@ class EditSectionController: UIViewController {
                 }
                 i += 1
             }
-            
             navigationController?.popViewController(animated: true)
         }
     }
-    }
+}

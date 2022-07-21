@@ -13,8 +13,6 @@ class CountryListController: UIViewController {
     
     var identifier = "CountryCell"
     var model = [CountryModel]()
-    var loggedUser: Credentials?
-    var users = [Credentials] ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +21,12 @@ class CountryListController: UIViewController {
         //progressSetup()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(accountTapped))
         jsonSetup()
-        jsonSetupForCredentials()
-        findLoggedUser()
 
     }
     
-    func findLoggedUser(){
-        let loggedMail = UserDefaults.standard.string(forKey: "loggedUser")
-  
-        for user in users{
-            if(user.email == loggedMail){
-                loggedUser = user
-            }
-        }
-    }
     @IBAction func accountTapped(_ sender: Any) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "AccountController") as! AccountController
         controller.title = "Profile"
-        controller.loggedUser = loggedUser
         navigationController?.show(controller, sender: nil)
     }
     func jsonSetup() {
@@ -48,25 +34,6 @@ class CountryListController: UIViewController {
             do {
                 model = try JSONDecoder().decode([CountryModel].self, from: data)
                 table.reloadData()
-            } catch{
-                print(error.localizedDescription)
-            }
-        }
-        
-    }
-    
-    func getDocumentsDirectoryUrl() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
-    }
-
-    func jsonSetupForCredentials() {
-        let jsonFile = self.getDocumentsDirectoryUrl().appendingPathComponent("Credentials.json")
-        
-        if let data = try? Data(contentsOf: jsonFile) {
-            do {
-                users = try JSONDecoder().decode([Credentials].self, from: data)
             } catch{
                 print(error.localizedDescription)
             }
@@ -87,7 +54,6 @@ extension CountryListController: UITableViewDelegate, UITableViewDataSource{
         let CountryModel = model[index]
         viewCont.title = CountryModel.name
         viewCont.cityModel = CountryModel.cities
-        viewCont.loggedUser = loggedUser
         navigationController?.show(viewCont, sender: nil)
     }
     
